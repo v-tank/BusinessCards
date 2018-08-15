@@ -6,7 +6,7 @@ module.exports = {
 
 	// function to add a Contact that's sent from the frontend through the req.body
 	add: function(req, res) {
-		// console.log(req.body);
+		console.log(req.body);
 
 		// create a doc in db using the sent object
 		db.Contact.create(req.body)
